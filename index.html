@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH-TUBE</title>
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <header>
+        <nav class="flex w-11/12 justify-between items-center mx-auto p-3 border-b">
+            <div class="w-[150px] logo">
+                <img src="./Image/Logo.png" alt="">
+            </div>
+            <div class="search"><label class="input input-bordered flex items-center gap-2">
+                <input type="text" class="grow" placeholder="Search" />              
+              </label>
+            </div>
+            <div class="sort"><button class="btn btn-primary">SORT</button>
+            </div>
+        </nav>
+    </header>
+    <nav id="add" class="flex gap-5 justify-center p-3"></nav>
+
+
+    <main>
+        <section id="videos" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10"></section>
+    </main>
+
+    <!-- You can open the modal using ID.showModal() method -->
+<button id="showModalData" class="hidden btn" onclick="myModal.showModal()">open modal</button>
+<dialog id="myModal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+   <div id="modal-box">
+
+   </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
+
+
